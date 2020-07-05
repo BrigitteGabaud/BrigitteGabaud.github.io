@@ -301,6 +301,49 @@ span.devel {
 }
 
 
+/* --- Media Queries ---*/
+
+@media screen and (max-width: 718px)
+{
+    #body {
+
+        margin:0;
+        padding: 0;
+    }
+
+
+    #container_header,
+    #main_container, 
+    #container_footer
+    {
+        display: flex;
+        flex-direction:column;
+        
+    }
+
+    #container_footer: {
+        flex:auto;
+    }
+
+    
+    #container_picture,
+    #container_title,
+    #container_informations,
+    #about,
+    #container_article
+
+    {
+        width:100%;
+    }
+
+    #container_recommendations {
+        display:none;
+    }  
+
+
+}
+
+
 
 
 
