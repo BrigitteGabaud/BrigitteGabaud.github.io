@@ -18,15 +18,15 @@
 
 body {
     font-family: 'Montserrat', Times New Roman, Verdana, sans-serif;  
-    font-size: 18px;
     max-width: 1200px;
-    margin:auto;
-
+    margin:0;
+    padding:0;
 }
 
 h1{
-    font-size: 3.3rem;
+    font-size: 3.9rem;
     font-weight: 300;
+    width: 100%;
     margin:0;
 
 }
@@ -38,21 +38,33 @@ h2{
 }
 
 h3{
-    font-weight: 500;
-    font-size: 1.5rem;
-    padding-bottom:0;
+    display: flex;
+    justify-content: center;
+    font-size:1.6rem;
+    color: #e88873;
+    background-color: #5c6d70;
+    padding: 5px;
+    margin-top: 20px;
     margin-bottom: 0;
 }
 
 h4{
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-bottom:0;
+    margin-bottom: 0; 
+}
+
+h5{
+    font-size: 1rem;
     margin-top: 10px;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
 p {
+    font-size: 1rem;
     margin-top:0px;
-    margin-bottom:30px;
 }
 
 /* ---- Header ----*/
@@ -63,11 +75,10 @@ p {
 
 #container_picture {
 	display:flex;
-    align-content: center;
-    justify-content: space-around;
-	padding-top: 20px;
+    flex-direction:column;
+    align-items: center;
     width: 30%;
-    padding: 50px 6px;
+    padding: 50px 6.5px;
     margin: 0;
     background-color: #e88873;
 }
@@ -77,6 +88,7 @@ img {
 	border-radius: 50%;
 	width: 200px;
 	height: 200px;
+    overflow: hidden;
 }
 
 #container_title{
@@ -119,28 +131,16 @@ span.devel {
 /* ---- Aside ----*/
 
 #container_informations {
-   flex:none;
+   display: flex;
+   flex-shrink: 0;
+   flex-direction: column;
    width: 30%; 
    background-color: #e88873;
-   
-}
-
-#container_informations h2 {
-	display: flex;
-    justify-content: center;
-    color: #e88873;
-    background-color: #5c6d70;
-    padding: 5px;
-}
-
-#container_informations p {
-    padding-top:0;
-    margin-top:0;
-
 }
 
 #details {
-    padding: 5% 15% 15% 15%;
+    display:flex;
+    padding: 5% 10% 5% 10%;
 }
 
 #about {
@@ -206,6 +206,10 @@ span.devel {
     color:#e88873;
 }
 
+.circle{
+    margin-right: 5px;
+}
+
 .fas.fa-circle {
     margin-top: 22px;
     font-size:10px;
@@ -220,12 +224,13 @@ span.devel {
 }
 
 #container_hobbies {
-    flex:none;
     display: flex;
     flex-direction: column;
     width: 30%;
     background-color:#e88873;
     margin-right: 0;
+    flex-shrink: 0;
+    padding-top: 6%;
 }
 
 #container_hobbies h2 {
@@ -300,6 +305,47 @@ span.devel {
     align-items:flex-start;
 }
 
+/*--- Media Queries ---*/
+
+@media screen and (max-width: 718px)
+{
+    #body {
+
+        margin:0;
+        padding: 0;
+    }
+
+
+    #container_header,
+    #main_container, 
+    #container_footer
+    {
+        display: flex;
+        flex-direction:column;
+        
+    }
+
+    #container_footer: {
+        flex:auto;
+    }
+
+    
+    #container_picture,
+    #container_title,
+    #container_informations,
+    #about,
+    #container_article
+
+    {
+        width:100%;
+    }
+
+    #container_recommendations {
+        display:none;
+    }  
+
+
+}
 
 
 
