@@ -131,7 +131,6 @@ span.devel {
 
 #container_informations {
    display: flex;
-   flex-shrink: 0;
    flex-direction: column;
    width: 30%; 
    background-color: #e88873;
@@ -145,7 +144,7 @@ span.devel {
 #about {
     margin-top: 24px;
     padding: 5% 10% 5% 10%;
-    text-align: justify;
+    text-align: left;
 }
 
 /* ---- Article ----*/
@@ -154,16 +153,15 @@ span.devel {
     display: flex;
     flex-direction: column;
     color:#5c6d70;
-    width: 70%
+    width: 70%;
+    margin-top:15px;
 }
 
-#container_article {
-	margin: 15px 25px 0 35px;
-}
+
 
 #container_article h2{
     color:black;
-    margin:25px 7px 15px 35px;
+    margin:25px 7px 15px 70px;
     padding-bottom: 10px;
     border-bottom: 2px solid #e88873;	
 }
@@ -176,6 +174,7 @@ span.devel {
     display:flex;
     flex-direction: row;
     padding-left: 36px;
+    margin-left: 35px;
 }
 
 .text {
@@ -228,7 +227,6 @@ span.devel {
     width: 30%;
     background-color:#e88873;
     margin-right: 0;
-    flex-shrink: 0;
     padding-top: 6%;
 }
 
@@ -263,12 +261,13 @@ span.devel {
     display:flex;
     flex-direction: column;
     color:#5c6d70;
-    margin:25px 7px 15px 35px;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 #container_recommendations h2{
     color:black;
-    margin:25px 7px 15px 35px;
+    margin:25px 7px 15px 70px;
     padding-bottom: 10px;
     border-bottom: 2px solid #e88873;   
 }
@@ -282,7 +281,7 @@ span.devel {
 #work_recommendations {
     display: flex;
     justify-content: space-between;
-    padding-left: 38px;
+    padding-left: 70px;
     }
 
 #work_recommendations h4{
@@ -306,6 +305,7 @@ span.devel {
 }
 
 /*--- Media Queries ---*/
+
 @media screen and (max-width: 768px)
 {
     img {
@@ -341,44 +341,134 @@ span.devel {
         font-size: 1.5rem;
         width: 25px;
         height: 25px;
-    }
-    
+    }  
 }
 
 @media screen and (max-width: 480px)
 {
-    
-
-
     #container_header,
     #main_container, 
-    #container_footer
+    #container_footer,
+    #container_hobbies
     {
         display: flex;
         flex-direction:column;
-        
+
     }
 
-    #container_footer: {
-        flex:auto;
-    }
-
-    
     #container_picture,
     #container_title,
     #container_informations,
     #about,
-    #container_article
-
+    #container_article,
+    #container_hobbies
     {
         width:100%;
+        margin: 0;
+
     }
 
     #container_recommendations {
         display:none;
     }  
 
+    img{
+        width: 200px;
+        height:200px;
+    }
 
+    #container_title{
+        background-color: #e88873;
+    }
+
+    h1{
+        text-align: center;
+        padding-left: 0;
+        font-size:2.5rem;
+    }
+
+    span.brigitte {
+        font-weight: 300;
+        color:white;
+    }
+        
+    #title h2{
+        text-align: center;
+        padding-left: 0;
+        font-size: 1.4rem;
+        color:black;
+        font-weight: 400;
+    }
+
+    span.devel {
+        border-bottom: 3px solid white;
+        text-decoration-color:#e88873; 
+    }
+    
+    h3{
+        font-size: 1.4rem;
+        color:white;
+        font-weight: 400;
+    }
+
+    #container_informations{
+        flex-direction: column-reverse;
+    }
+
+    #about, #details{
+        padding-left: 5%;
+    }
+
+
+    h4{
+        font-size: 1.1rem;
+    }
+
+    h5, p{
+        font-size: 0.9rem;
+    }
+
+    p{
+        margin: 0;
+        font-weight: 300;
+    }
+
+    #container_article h2{
+        font-size: 1.4rem;
+        margin-left: 5%;
+    }
+
+    .informations{
+        flex-direction: column;
+        margin:0;
+        padding-left:5%;
+        padding-bottom: 10%;
+    }
+
+    .icon{
+        display:none;
+    }
+
+    .circle{
+        display:none;
+    }
+
+    .date{
+        margin-top: 0;
+    }
+
+    .date p{
+        font-weight: 500;
+    }
+
+    #container_hobbies{
+        padding-top: 0;
+    }
+
+    #container_hobbies h3{
+        margin-top: 0;
+        font-weight:500;
+    }
 }
 
 
