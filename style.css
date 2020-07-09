@@ -8,10 +8,8 @@
 /* L113  -4- Aside*/
 /* L147  -5- Article*/
 /* L212  -6- Footer*/
+/* L311  -7- Media Queries*/
 
-/* ----------------*/
-/* == COLOR CODES  */
-/* ----------------*/
 
 
 /* ---- Body ---- */
@@ -28,6 +26,7 @@ h1{
     font-weight: 300;
     width: 100%;
     margin:0;
+    padding-left: 40px;
 
 }
 
@@ -108,7 +107,7 @@ img {
 
 #title h2 {
     color: #5c6d70;
-    padding:0;
+    padding-left: 42px;
 }
 
 span.brigitte {
@@ -154,7 +153,6 @@ span.devel {
 #container_article {
     display: flex;
     flex-direction: column;
-    align-items: space-around;
     color:#5c6d70;
     width: 70%
 }
@@ -177,6 +175,7 @@ span.devel {
 .informations {
     display:flex;
     flex-direction: row;
+    padding-left: 36px;
 }
 
 .text {
@@ -283,6 +282,7 @@ span.devel {
 #work_recommendations {
     display: flex;
     justify-content: space-between;
+    padding-left: 38px;
     }
 
 #work_recommendations h4{
@@ -306,14 +306,48 @@ span.devel {
 }
 
 /*--- Media Queries ---*/
-
-@media screen and (max-width: 718px)
+@media screen and (max-width: 768px)
 {
-    #body {
-
-        margin:0;
-        padding: 0;
+    img {
+        border: 3px #5c6d70 solid;
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
     }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2, h3{
+        font-size: 1rem;
+    }
+
+    h4{
+        font-size: 0.8rem;
+    }
+
+    h5, p{
+        font-size: 0.6rem;
+    }
+
+    .fas.fa-graduation-cap, .fas.fa-briefcase, .fas.fa-pencil-alt{
+        font-size: 1.5rem;
+    }
+    
+
+    #hobbies li {
+        padding: 10px 12px 10px 12px;
+        font-size: 1.5rem;
+        width: 25px;
+        height: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 480px)
+{
+    
 
 
     #container_header,
