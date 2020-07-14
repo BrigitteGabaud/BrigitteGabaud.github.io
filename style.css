@@ -487,6 +487,38 @@ span.devel {
     }     
 }
 
+/*--- Small screen ---*/
+
+@media screen and (max-width: 320px)
+{
+    img{
+        width: 150px;
+        height:150px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    #title h2, h2, h3{
+        font-size: 1rem;
+    }
+
+    h4{
+        font-size: 0.9rem;
+    }
+
+    h5{
+        font-size: 0.8rem;
+    }
+    
+    p{
+        font-size:0.8rem
+    }
+
+
+}
+
 
 
 
