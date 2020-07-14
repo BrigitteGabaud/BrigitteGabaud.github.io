@@ -23,7 +23,6 @@ body {
 h1{
     font-size: 3.9rem;
     font-weight: 300;
-    width: 100%;
     margin:0;
     padding-left: 40px;
 
@@ -76,7 +75,7 @@ p {
     flex-direction:column;
     align-items: center;
     width: 30%;
-    padding: 50px 6.5px;
+    padding: 50px 6px;
     margin: 0;
     background-color: #e88873;
 }
