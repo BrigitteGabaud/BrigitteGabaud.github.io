@@ -2,14 +2,28 @@
 /* == SUMMARY    */ 
 /*---------------*/
 
-/* L11   -1- Body*/
-/* L51   -2- Header*/
-/* L106  -3- Main*/
-/* L113  -4- Aside*/
-/* L147  -5- Article*/
-/* L212  -6- Footer*/
-/* L311  -7- Media Queries*/
+/* L28   -1- Body*/
+/* L81  -2- Header*/
+/* L135  -3- Main*/
+/* L141  -4- Aside*/
+/* L172  -5- Article*/
+/* L237  -6- Footer*/
+/* L326  -7- Media Queries*/
+/* L328      Tablet*/
+/* L368      Medium sreen*/
+/* L515      Small screen*/
 
+/*------------------*/ 
+/* == COLOR CODES   */ 
+/*------------------*/
+
+/* -Black- (a, container_article h2, container_recommendations h2, title h2 480px ): #000*/
+/* -Faux-midle-red- (h3, container_picture, span.brigitte, span.devel, container_informations,
+container_article, .fas.fa-graduation-cap,.fas.fa-briefcase, .far.fa-dot-circle,.fas.fa-circle, 
+#container_hobbies, #container_hobbies h2, #container_recommendations h2, .fas.fa-pencil-alt: #e88873*/
+/* -Faux-cadet- (h3, img, title h2, a,container_article, container_hobbies h2, hobbies ul, hobbies li, 
+container_recommendations, img): #5c6d70*/
+/* -WHhite- (h3 480px, span.brigitte 480px, ): #FFF*/
 
 /* ---- Body ---- */
 
@@ -140,7 +154,7 @@ span.devel {
 
 a{
    text-decoration: none;
-   color: black;
+   color: #000;
    font-style: italic;
 }
 
@@ -166,7 +180,7 @@ a:hover{
 }
 
 #container_article h2{
-    color:black;
+    color:#000;
     margin:20px 7px 15px 70px;
     padding-bottom: 10px;
     border-bottom: 2px solid #e88873;	
@@ -271,7 +285,7 @@ a:hover{
 }
 
 #container_recommendations h2{
-    color:black;
+    color:#000;
     margin:25px 7px 15px 70px;
     padding-bottom: 10px;
     border-bottom: 2px solid #e88873;   
@@ -364,7 +378,7 @@ a:hover{
 
     h3{
         font-size: 1.2rem;
-        color:white;
+        color:#FFF;
         font-weight: 400;
     }
 
@@ -406,14 +420,14 @@ a:hover{
 
     span.brigitte {
         font-weight: 300;
-        color:white;
+        color:#FFF;
     }
         
     #title h2{
         text-align: center;
         padding-left: 0;
         font-size: 1.2rem;
-        color:black;
+        color:#000;
         font-weight: 400;
     }
 
