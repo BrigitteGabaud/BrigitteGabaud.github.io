@@ -166,7 +166,7 @@ a:hover{
 #about {
     margin-top: 24px;
     padding: 5% 10% 5% 10%;
-    text-align: left;
+    text-align: justify;
 }
 
 /* ---- Article ----*/
